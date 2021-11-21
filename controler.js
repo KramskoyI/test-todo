@@ -60,7 +60,9 @@ Controler.prototype.filterChecked = function(){
     });
     this.masCheck.push(todoF);
     console.log(this.masCheck)
+    this.view.render(this.masCheck)
 }
+
 
 Controler.prototype.filterActive = function(){
     active.addEventListener('click', this.filterActived.bind(this));
@@ -72,7 +74,7 @@ Controler.prototype.filterActived = function(){
         }
     });
     this.masActive.push(todoA);
-    console.log(this.masActive)
+    this.view.render(this.masActive)
 }
 
   
